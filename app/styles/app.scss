@@ -1,0 +1,52 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.heading-container{
+  display: inline-block;
+  max-width: 980px;
+  height: 80px;
+  position: relative;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.input {
+  display: inline-block;
+}
+
+.search-btn {
+  display: inline-block;
+}
+
+.sell {
+  display: inline-block;
+}
+
+.register {
+  display: inline-block;
+}
+
+.cart{
+  display: inline-block;
+}
+
+.sign-in {
+  display: inline-block;
+}
