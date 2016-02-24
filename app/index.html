@@ -7,70 +7,82 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-      <div class="container">
+      <div class="container-fluid">
         <header>
           <div class="row heading-container">
             <div class="col-xs-12">
-              <a href="#" class="logo">Etsy</a>
-            </div>
-            <div class="input">
-              <input id="search-query" class="search-input" type="text" placeholder="Search" name="search_query" value="">
-            </div>
-            <div class="search-btn">
-              <button class="btn" type="submit" value="search">Search</button>
-            </div>
-            <div class="sell">
-              <a href="#" class="sell-link">Sell on Etsy</a>
-            </div>
-            <div class="register">
-              <a href="#" class="register-etsy">Register on Etsy</a>
-            </div>
-            <div class="sign-in">
-              <a href="#" id="sign-in" role="button">Sign In</a>
-            </div>
-            <div class="cart">
-              <a href="#" id="shopping-cart">Cart</a>
+              <div class="search-container"
+                <div class="etsy-logo">
+                  <a href="#" class="logo">Etsy</a>
+                </div>
+                <div class="input">
+                  <input id="search-query" class="search-input" type="text" placeholder="Search" name="search_query" value="">
+                </div>
+                <div class="search-btn">
+                  <button class="btn" type="submit" value="search">Search</button>
+                </div>
+              </div>
+                <ul class="top-navigation">
+                  <li class="sell">
+                    <a href="#" class="sell-link">Sell on Etsy</a>
+                  </li>
+                  <li class="register">
+                    <a href="#" class="register-etsy">Register on Etsy</a>
+                  </li>
+                  <li class="sign-in">
+                    <a href="#" id="sign-in" role="button">Sign In</a>
+                  </li>
+                  <li class="cart">
+                    <a href="#" id="shopping-cart">Cart</a>
+                  </li>
+                </ul>
             </div>
           </div>
 
           <div class="nav-cont">
             <nav class="row">
-              <div class="clothing">
-                <a href="#">Clothing and Accessories</a>
-              </div>
-              <div class="jewls">
-                <a href="#">Jewlery</a>
-              </div>
-              <div class="crafts">
-                <a href="#">Craft Supplies and Tools</a>
-              </div>
-              <div class="weddings">
-                <a href="#">Weddings</a>
-              </div>
-              <div class="enter">
-                <a href="#">Entertainment</a>
-              </div>
-              <div class="home">
-                <a href="#">Home and Living</a>
-              </div>
-              <div class="kids">
-                <a href="#">Kids and Baby</a>
-              </div>
-              <div class="vintage">
-                <a href="#">Vintage</a>
+              <div class="col-xs-12">
+                <ul class="nav-contain">
+                  <li class="clothing">
+                    <a href="#">Clothing &amp; Accessories</a>
+                  </li>
+                  <li class="jewls">
+                    <a href="#">Jewlery</a>
+                  </li>
+                  <li class="crafts">
+                    <a href="#">Craft Supplies &amp; Tools</a>
+                  </li>
+                  <li class="weddings">
+                    <a href="#">Weddings</a>
+                  </li>
+                  <li class="enter">
+                    <a href="#">Entertainment</a>
+                  </li>
+                  <li class="home">
+                    <a href="#">Home &amp; Living</a>
+                  </li>
+                  <li class="kids">
+                    <a href="#">Kids &amp; Baby</a>
+                  </li>
+                  <li class="vintage">
+                    <a href="#">Vintage</a>
+                  </li>
+                </ul>
               </div>
             </nav>
           </div>
         </header>
       </div>
-        <main>
-        <div class="container">
-          <div class="row">
+      <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
             <div id="show-results-for" class="">
-              <h3>All Catagories</h3>
+              <h3>Show results for:</h3>
+              <h6>All Catagories</h6>
               <ul>
                 <li>
-                  <a href="#">Home and Living</a>
+                  <a href="#">Home &amp; Living</a>
                 </li>
                 <li>
                   <a href="#">Jewlery</a>
@@ -79,28 +91,28 @@
                   <a href="#">Clothing</a>
                 </li>
                 <li>
-                  <a href="#">Art and Collectables</a>
+                  <a href="#">Art &amp; Collectables</a>
                 </li>
                 <li>
                   <a href="#">Accessories</a>
                 </li>
                 <li>
-                  <a href="#">Bags and Purses</a>
+                  <a href="#">Bags &amp; Purses</a>
                 </li>
                 <li>
-                  <a href="#">Toys and Games</a>
+                  <a href="#">Toys &amp; Games</a>
                 </li>
                 <li>
-                  <a href="#">Craft Supplies and Tools</a>
+                  <a href="#">Craft Supplies &amp; Tools</a>
                 </li>
                 <li>
-                  <a href="#">Papper and Party Supplies</a>
+                  <a href="#">Papper &amp; Party Supplies</a>
                 </li>
                 <li>
-                  <a href="#">Books, Movies and Music</a>
+                  <a href="#">Books, Movies &amp; Music</a>
                 </li>
                 <li>
-                  <a href="#">Bath and Beauty</a>
+                  <a href="#">Bath &amp; Beauty</a>
                 </li>
                 <li>
                   <a href="#">Weddings</a>
@@ -109,7 +121,7 @@
                   <a href="#">Pet Supplies</a>
                 </li>
                 <li>
-                  <a href="#">Electronics and Accessories</a>
+                  <a href="#">Electronics &amp; Accessories</a>
                 </li>
                 <li>
                   <a href="#">Shoes</a>
@@ -119,10 +131,11 @@
             </div>
           </div>
         </div>
-        </main>
-        <footer>
+      </div>
+      </main>
+      <footer>
 
-        </footer>
+      </footer>
     <script src="js/bundle.js"></script>
   </body>
 </html>

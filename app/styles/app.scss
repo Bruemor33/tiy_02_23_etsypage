@@ -1,6 +1,7 @@
 
 // Bootstrap Variables
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+$container-large-desktop: 998px;
 
 // Import Bootstrap
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
@@ -16,11 +17,22 @@ img {
   max-width: 100%;
 }
 
+/*****************************************************************************
+HEADER TOP
+*****************************************************************************/
+
+
 .heading-container{
-  display: inline-block;
-  max-width: 980px;
-  height: 80px;
+  height: 60px;
+  border-bottom: 1px solid #E1E3DF;
+  margin-top: 35px;
   position: relative;
+}
+
+.search-container {
+  display: inline-block;
+  position: relative;
+  margin-left: 128px;
 }
 
 .logo {
@@ -33,6 +45,14 @@ img {
 
 .search-btn {
   display: inline-block;
+}
+
+.top-navigation {
+  display: inline-block;
+  position: relative;
+  bottom: 20px;
+  float: right;
+  margin-right: 145px;
 }
 
 .sell {
@@ -50,3 +70,92 @@ img {
 .sign-in {
   display: inline-block;
 }
+
+
+
+
+
+/*****************************************************************************
+HEADER NAV
+*****************************************************************************/
+
+
+
+
+.nav-cont {
+  border-bottom: 1px solid #E1E3DF;
+  box-shadow: none 25px 15px 15px #888888;
+}
+
+.nav-contain {
+  margin-left: 100px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.clothing {
+  display: inline-block;
+  margin-right: 18px;
+}
+
+.jewls {
+  display: inline-block;
+  margin-right: 18px;
+}
+
+.crafts {
+  display: inline-block;
+  margin-right: 18px;
+}
+
+.weddings {
+  display: inline-block;
+  margin-right: 18px;
+}
+
+.enter {
+  display: inline-block;
+  margin-right: 18px;
+}
+
+.home {
+  display: inline-block;
+  margin-right: 18px;
+}
+
+.kids {
+  display: inline-block;
+  margin-right: 18px;
+}
+
+.vintage {
+  display: inline-block;
+  margin-right: 18px;
+}
+
+
+
+/*****************************************************************************
+ALL CATAGORIES
+*****************************************************************************/
+
+
+
+main {
+  background-color: #F5F5F1;
+}
+
+
+/*****************************************************************************
+ALL CATAGORIES
+*****************************************************************************/
+
+
+
+
+
+
+
+/*****************************************************************************
+REFINED SEARCH
+*****************************************************************************/
