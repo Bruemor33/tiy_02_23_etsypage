@@ -38,9 +38,9 @@ function buildTemplates(data) {
 var resultsArray = data["results"];
 var source   = $("#top-catagories").html();
 var template = handlebars.compile(source);
-var context = 
+var context =
 var html = template({resultsArray});
 
-$('#top-results').html(html);
-
+$('#top-results').html(html); //I could use append here in order to place my generated handlebar html into a placeholder.
+//I used .html in order to have the content update when in cycles the each handlebar helper loop.
 }
