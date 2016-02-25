@@ -54,7 +54,7 @@ HEADER TOP
 .search-container {
   display: inline-block;
   position: relative;
-  margin-left: 128px;
+  margin-left: 140px;
 }
 
 .logo {
@@ -74,7 +74,7 @@ HEADER TOP
   position: relative;
   bottom: 20px;
   float: right;
-  margin-right: 145px;
+  margin-right: 155px;
 }
 
 .sell {
@@ -110,7 +110,7 @@ HEADER NAV
 }
 
 .nav-contain {
-  margin-left: 100px;
+  margin-left: 115px;
   margin-top: 18px;
   margin-bottom: 18px;
 }
@@ -174,7 +174,36 @@ ALL CATAGORIES
 
 
 
+.cat-container {
+  display: inline-block;
+  // float: right;
+}
 
+.cat-title {
+  margin-top: 20px;
+}
+
+// .results {
+//   background-color: #fff;
+//   height: 200px;
+//   width: 200px;
+// }
+
+.img-container {
+  height: 350px;
+  width: 200px;
+  background-color: #fff;
+}
+
+.result-images {
+  width: 200px;
+  border: 1px solid black;
+
+  img {
+    height: 200px
+    
+  }
+}
 
 
 

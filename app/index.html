@@ -73,12 +73,13 @@
           </div>
         </header>
       </div>
+
       <main>
       <div class="container">
         <div class="row">
           <div class="col-md-3">
             <div id="show-results-for" class="">
-              <h4 class="results">Show results for:</h4>
+              <h4 class="condition">Show results for:</h4>
               <ul id="catagories">
                 <h5 class="cats">All Catagories</h5>
                 <li class="cat1">
@@ -127,98 +128,117 @@
                   <a href="#">Shoes</a>
                 </li>
               </ul>
-
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3">
-            <div id="show-results-for" class="">
-              <h4 class="results">Refine your search:</h4>
-              <ul id="item-type">
-                <ul id="item-types">
-                  <h5 class="cats">Item Type</h5>
-                  <li class="cat1">
-                    <a href="#">All Items</a>
-                  </li>
-                  <li class="cat2">
-                    <a href="#">Handmade</a>
-                  </li>
-                  <li class="cat3">
-                    <a href="#">Vintage</a>
-                  </li>
-                </ul>
-                <ul class="prices">
-                  <li class="cat4">
-                    <a href="#">Low Input</a>
-                  </li>
-                  <li class="cat5">
-                    <a href="#">Accessories</a>
-                  </li>
-                  <li class="cat6">
-                    <a href="#">Bags &amp; Purses</a>
-                  </li>
-                </ul>
-                <ul class="filter-color">
-                  <li class="cat7">
-                    <a href="#">red</a>
-                  </li>
-                  <li class="cat8">
-                    <a href="#">orange</a>
-                  </li>
-                  <li class="cat9">
-                    <a href="#">yellow</a>
-                  </li>
-                  <li class="cat10">
-                    <a href="#">green</a>
-                  </li>
-                  <li class="cat11">
-                    <a href="#">teal</a>
-                  </li>
-                  <li class="cat12">
-                    <a href="#">blue</a>
-                  </li>
-                  <li class="cat13">
-                    <a href="#">purple</a>
-                  </li>
-                  <li class="cat14">
-                    <a href="#">black</a>
-                  </li>
-                  <li class="cat15">
-                    <a href="#">white</a>
-                  </li>
-                </ul>
-                <ul class="ordering-ops">
-                  <li class="cat14">
-                    <a href="#">Accepts Etsy Gift Cards</a>
-                  </li>
-                  <li class="cat15">
-                    <a href="#">Customizable</a>
-                  </li>
-                </ul>
-                <ul class="shop-location">
-                  <li class="cat14">
-                    <a href="#">Anywhere</a>
-                  </li>
-                  <li class="cat15">
-                    <a href="#">United States</a>
-                  </li>
-                  <li class="cat15">
-                    <a href="#">Choose a Custome</a>
-                  </li>
-                </ul>
+          <div id="show-results-for" class="">
+            <h4 class="condition">Refine your search:</h4>
+            <ul id="item-type">
+              <ul id="item-types">
+                <h5 class="cats">Item Type</h5>
+                <li class="cat1">
+                  <a href="#">All Items</a>
+                </li>
+                <li class="cat2">
+                  <a href="#">Handmade</a>
+                </li>
+                <li class="cat3">
+                  <a href="#">Vintage</a>
+                </li>
               </ul>
-
-
+              <ul class="prices">
+                <li class="cat4">
+                  <a href="#">Low Input</a>
+                </li>
+                <li class="cat5">
+                  <a href="#">Accessories</a>
+                </li>
+                <li class="cat6">
+                  <a href="#">Bags &amp; Purses</a>
+                </li>
+              </ul>
+              <ul class="filter-color">
+                <li class="cat7">
+                  <a href="#">red</a>
+                </li>
+                <li class="cat8">
+                  <a href="#">orange</a>
+                </li>
+                <li class="cat9">
+                  <a href="#">yellow</a>
+                </li>
+                <li class="cat10">
+                  <a href="#">green</a>
+                </li>
+                <li class="cat11">
+                  <a href="#">teal</a>
+                </li>
+                <li class="cat12">
+                  <a href="#">blue</a>
+                </li>
+                <li class="cat13">
+                  <a href="#">purple</a>
+                </li>
+                <li class="cat14">
+                  <a href="#">black</a>
+                </li>
+                <li class="cat15">
+                  <a href="#">white</a>
+                </li>
+              </ul>
+              <ul class="ordering-ops">
+                <li class="cat14">
+                  <a href="#">Accepts Etsy Gift Cards</a>
+                </li>
+                <li class="cat15">
+                  <a href="#">Customizable</a>
+                </li>
+              </ul>
+              <ul class="shop-location">
+                <li class="cat14">
+                  <a href="#">Anywhere</a>
+                </li>
+                <li class="cat15">
+                  <a href="#">United States</a>
+                </li>
+                <li class="cat15">
+                  <a href="#">Choose a Custome</a>
+                </li>
+              </ul>
+            </ul>
+          </div>
+          </div>
+          </div>
+          <div class="col-md-9 cat-container"> <!--placeholder for template-->
+            <div id="top-results">
             </div>
           </div>
         </div>
+        <!-- <div class="row">
+          <div class="col-md-3">
+          </div>
+        </div> -->
 
       </div>
       </main>
+
       <footer>
 
       </footer>
+    <script id="top-catagories" type="text/x-handlebars-template">
+      <div class="cat-title">
+        <h6>{{title}}</h6>
+
+        {{#each resultsArray}}
+        <ul class="results">
+          <li class="col-md-4 result-images">
+            <a href="#" class="img-container">
+              <img src="{{Images.0.url_fullxfull}}">
+            </a>
+            <p>{{"Image.0.title"}}</p>
+          </li>
+        </ul>
+        {{/each}}
+        </div>
+      </div>
+    </script>
     <script src="js/bundle.js"></script>
   </body>
 </html>
