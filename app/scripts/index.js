@@ -38,7 +38,7 @@ function buildTemplates(data) {
 var resultsArray = data["results"];
 var source   = $("#top-catagories").html();
 var template = handlebars.compile(source);
-var context =
+// var context =
 var html = template({resultsArray});
 
 $('#top-results').html(html); //I could use append here in order to place my generated handlebar html into a placeholder.
